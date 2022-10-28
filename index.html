@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EMMET pour la vie</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <h1>Bonjour, aujourd'hui quelques précisions sur EMMET !</h1>
+
+    <h2>EMMET : Un ami qui vous veut du bien</h2>
+
+    <p>EMMET permet à l'aide d'une seule ligne de générer du code HTML, par exemple : <span>h1+h2+p</span> va nous donner un premier titre principal, puis un deuxième titre puis un paragraphe !</p>
+
+    <p>Autre exemple : lorsque je veux rajouter une classe à une balise div je n'ai qu'à faire <span>div.nom-de-ma-classe</span>. Et bim une div est créee avec le nom de classe desiré ! <br/><br /> 
+    Également, si je fais <span>div#ma-div>(h1+h2+p*3)</span> cela va me donner une div avec l'id "ma-div" contenant un h1, un h2 et 3 paragraphes.</p>
+
+    <p>Tips supplémentaire : Pour ajouter du contenu entre les balises d'un élément je peux le mettre entre crochet. 
+    <br/><span>ul>li*2{test}</span> me donnera une ul avec dedans deux li qui auront pour contenu "test". Si je remplace {test} dans l'exemple précédent par {test $} cela m'ajoutera un décompte après le mot test : test 1 puis test 2</p>
+
+    <h2>Maintenant un peu d'entrainement !</h2>
+
+    <p>1) Je souhaite afficher ci-desssous avec EMMET une div de classe test contenant un h1 puis un h2 et enfin une ul avec 3 éléments li (elem 1, elem 2, elem 3). Garder le code EMMET en commentaire (cmd + k + c sur Mac et ctrl + / sur Windows)</p>
+
+    <!-- div.test>h1+h2+ul>li{elem$}*3 -->
+    <div class="test">
+        <h1></h1>
+        <h2></h2>
+        <ul>
+            <li>elem1</li>
+            <li>elem2</li>
+            <li>elem3</li>
+        </ul>
+    </div>
+
+
+    <p>2) Je souhaite maintenant afficher une div de classe cool contenant un h1 puis un paragraphe ainsi qu'une div de class links (à la suite de la précédente) contenant 3 liens (link 1, link 2, link 3)</p>
+
+    <!-- div.cool>h1+p+div.links>a{link $}*3 -->
+
+    <div class="cool">
+        <h1></h1>
+        <p></p>
+        <div class="links"><a href="">link 1</a><a href="">link 2</a><a href="">link 3</a></div>
+    </div>
+
+
+    <p>3) Je souhaite enfin afficher un footer d'id "bottom" avec à l'interieur un paragraphe de classe "copyright" et un lien de classe "social" et de contenu "Page Emmet".
+    <br /><br /> Créer ensuite une page emmet.html avec juste un h1 qui dira EMMET!, page vers laquelle notre dernier lien crée devra renvoyer</p>
+
+    <!-- footer#bottom>p.copyright+a.social{Page Emmet} -->
+
+<footer id="bottom">
+    <p class="copyright"></p>
+    <a href="" class="social">Page Emmet</a>
+</footer>
+
+</body>
+</html>
